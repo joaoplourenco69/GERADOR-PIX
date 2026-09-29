@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Loja Construção | Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro de Produto</h2>
+        <form id="formProduto">
+            <input type="text" id="nomeProd" placeholder="Nome do Produto" required>
+            <select id="categoria">
+                <option value="Basico">Material Básico</option>
+                <option value="Ferramentas">Ferramentas</option>
+            </select>
+            <input type="number" id="preco" step="0.01" placeholder="Preço R$" required>
+            <button type="submit">Cadastrar Produto</button>
+            <button type="button" onclick="location.href='index.html'" style="background:#444">Voltar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Loja de Tênis</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="app">
+		<main class="products-area" id="product-app">
+			<header class="store-header">
+				<div class="store-top">
+					<div>
+						<h1>Loja de Tênis</h1>
+						<p>Os melhores modelos Nike, Adidas e Puma</p>
+					</div>
+					<button id="open-cart" class="open-cart">🛒 <span id="cart-count">0</span></button>
+				</div>
+			</header>
+
+			<section class="products-grid" id="products">
+				<!-- Produtos serão inseridos aqui via script -->
+			</section>
+		</main>
+
+		<aside class="cart-sidebar" id="cart">
+			<button id="close-cart" class="cart-close">✖</button>
+			<h2>Carrinho</h2>
+			<div id="cart-items"></div>
+			<div class="cart-footer">
+				<div class="cart-total">Total: <span id="cart-total">R$ 0,00</span></div>
+				<button id="checkout">Finalizar Compra</button>
+				<button id="clear-cart" class="secondary">Limpar Carrinho</button>
+			</div>
+
+			<section id="pix-section" class="pix-section">
+				<h3>PIX</h3>
+				<div id="pix-area">
+					<p id="pix-instruction">Adicione produtos ao carrinho para gerar cobrança PIX. Após gerar, use o QR ou copie o "PIX Copia e Cola" para pagar no seu app bancário. Só confirme a compra após o comprovante ser gerado pelo seu banco (clique em "Confirmar Pagamento").</p>
+					<img id="pix-qr" alt="QR PIX" style="display:none; width:180px; height:180px; margin-top:8px;" />
+					<textarea id="pix-payload" readonly style="width:100%;height:80px;display:none;margin-top:8px"></textarea>
+					<div class="pix-actions">
+						<button id="copy-pix" class="btn" style="display:none">Copiar PIX</button>
+						<button id="confirm-payment" class="btn-primary" style="display:none">Confirmar Pagamento</button>
+					</div>
+				</div>
+			</section>
+		</aside>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
